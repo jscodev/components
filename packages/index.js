@@ -12,7 +12,7 @@ componentsContext.keys().forEach((key) => {
   components[component.name] = component
 })
 
-export const install = function (Vue) {
+const install = function (Vue) {
   Vue.use(ViewUI)
   for (let key in components) {
     Vue.component(components[key].name, components[key])
