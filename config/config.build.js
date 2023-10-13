@@ -24,6 +24,7 @@ function getComponentEntries(path) {
 }
 
 const buildConfig = {
+  parallel: false,
   outputDir: resolve('lib'),
   productionSourceMap: false,
   configureWebpack: {
